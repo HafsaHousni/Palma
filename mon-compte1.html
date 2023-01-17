@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon compte détaillé</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<section class="header">
+            <div class="navbar">
+                <div class="container">
+                <div class="logo-menu-left">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="Palma-Logo">
+                    </div>
+                    <div class="navbar-menu-left">
+                    <ul class="menu-left">
+                        <li class="menu-item" class="active-item">
+                            <a href="index.html" class="is-active" >accueil</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="kiosque.html">kiosque</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="Ma_bibliotheque.html">ma bibliothèque</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="pack_abonnement.html">pack & abonnements</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="navbar-menu-right">
+                    <ul class="menu-right">
+                        <li>
+                            <div class="search" id="search">
+                                <input class="search-txt" type="text" placeholder="Type to search">
+                                <a class="search-btn"><i class="fas fa-search"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                           <p><i class="fa-solid fa-folder-open"></i><span>15,75 MAD</span> <i class="fa-solid fa-circle-plus"></i></p>
+                        </li>
+                        <li>
+                            <a href="mon-compte1.html"><i class="fa-regular fa-user"></i></a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 5 9 L 5 11 L 45 11 L 45 9 L 5 9 z M 5 24 L 5 26 L 45 26 L 45 24 L 5 24 z M 5 39 L 5 41 L 45 41 L 45 39 L 5 39 z"/></svg>
+                </div>
+            </div>
+            </div>
+    
+        <!-- </div> -->
+</section>
+<section class="link-section">
+        <div class="container"><p><a href="index.html">Accueil</a> / <a href="mon-compte.html">Mon compte</a></p></div>
+</section>
+<section class="profile-activité-section">
+    <div class="container">
+            <div class="mon-profil">
+                    <h3 class="green-title">Mon Profile</h3>
+                    <div class="profil-box">
+                        <div class="left">
+                            <div class="profil-pic">
+                                <img src="./images/pic.jpeg" width="130px">
+                                <div class="profil-name">Rachid Chellah</div>
+                                <div class="modifier"><a href="#">Modifier</a></div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <label> adresse mail</label>
+                            <input type="email" value="Rachid-chellah@gmail.com" readonly>
+                            <label>abonnement</label>
+                            <input type="text" value="Premium" readonly>
+                            <label>groupe</label>
+                            <input type="text" value="-" readonly>
+                            <label>date d'inscription</label>
+                            <input type="text" value="05 / 09 / 2022" readonly>
+                        </div>
+                    </div> 
+            </div>
+        <div class="activite">
+            <h3 class="green-title">Activité</h3>
+            <div class="activite-box">
+                    <div class="total-achat">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h5>total achat</h5>
+                        <p>358</p>
+                    </div>
+                    <div class="total-abonnement">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h5>total abonnements</h5>
+                        <p>22</p>
+                    </div>
+                    <div class="achat-auj">
+                        <h5>achat d'aujourd'hui</h5>
+                        <p>4</p>
+                    </div>
+                    <div class="abon-auj">
+                        <h5>abonnement d'aujourd'hui</h5>
+                        <p>0</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="statistiques-section">
+        <div class="container">
+        <div class="table-header">
+            <button class="tablinks active" onclick="tabs(event, 'ventes')">Statistiques ventes</button>
+            <button class="tablinks" onclick="tabs(event, 'abonnement')">Statistiques abonnement</button>
+        </div>
+        <div style="overflow-x:auto;">
+        <table id="ventes" class="tabcontent" >
+            <tr>
+            <th>type</th>
+            <th>numéro</th>
+            <th>produit</th>
+            <th>date de sortie</th>
+            <th>catégorie</th>
+            <th>langue</th>
+            <th>client</th>
+            <th>prix</th>
+            </tr>
+            <tr>
+                <td><span>magazine</span></td>
+                <td>13</td>
+                <td><span>lala fatima</span></td>
+                <td>19 avril 19</td>
+                <td>mode et bien etre</td>
+                <td>arabe</td>
+                <td>rachid chellah</td>
+                <td>0,50 MAD</td>
+            </tr>
+            <tr>
+                <td><span>magazine</span></td>
+                <td>13</td>
+               <td><span>lala fatima</span></td>
+                <td>19 avril 19</td>
+                <td>mode et bien etre</td>
+                <td>arabe</td>
+                <td>lala fatima</td>
+                <td>0,50 MAD</td>
+            </tr>
+            <tr>
+                <td><span>magazine</span></td>
+                <td>13</td>
+               <td><span>lala fatima</span></td>
+                <td>19 avril 19</td>
+                <td>mode et bien etre</td>
+                <td>arabe</td>
+                <td>yassine moujane</td>
+                <td>0,50 MAD</td>
+            </tr>
+            <tr>
+                <td><span>magazine</span></td>
+                <td>13</td>
+               <td><span>lala fatima</span></td>
+                <td>19 avril 19</td>
+                <td>mode et bien etre</td>
+                <td>arabe</td>
+                <td>souad elgunaoui</td>
+                <td>0,50 MAD</td>
+            </tr>
+            <tr>
+                <td><span>magazine</span></td>
+                <td>13</td>
+               <td><span>lala fatima</span></td>
+                <td>19 avril 19</td>
+                <td>mode et bien etre</td>
+                <td>arabe</td>
+                <td>lala faatim</td>
+                <td>0,50 MAD</td>
+            </tr>
+            <tr>
+                <td><span>magazine</span></td>
+                <td>13</td>
+               <td><span>lala fatima</span></td>
+                <td>19 avril 19</td>
+                <td>mode et bien etre</td>
+                <td>arabe</td>
+                <td>karima wassite</td>
+                <td>0,50 MAD</td>
+            </tr>
+        </table>
+    </div>
+    <div style="overflow-x:auto;">
+        <table id="abonnement" class="tabcontent" style="display: none;">
+            <tr>
+            <th>type</th>
+            <th>numéro</th>
+            <th>produit</th>
+            <th>date de sortie</th>
+            <th>catégorie</th>
+            <th>langue</th>
+            <th>client</th>
+            <th>prix</th>
+            </tr>
+            <tr>
+                <td><span>magazine</span></td>
+                <td>13</td>
+                <td><span>lala fatima</span></td>
+                <td>19 avril 19</td>
+                <td>mode et bien etre</td>
+                <td>arabe</td>
+                <td>said wadie</td>
+                <td>0,50 MAD</td>
+            </tr>
+            <tr>
+                <td><span>magazine</span></td>
+                <td>13</td>
+               <td><span>lala fatima</span></td>
+                <td>19 avril 19</td>
+                <td>mode et bien etre</td>
+                <td>arabe</td>
+                <td>chakib bari</td>
+                <td>0,50 MAD</td>
+            </tr>
+           
+        </table>
+    </div>
+        <div class="bottom">
+            <p> Affichage <span>1</span> au <span>20</span> sur 25 éléments</p>
+            <p>Page 2</p>
+        </div>
+    </div>
+</section>
+<div class="container">
+<section class="social-media-section">
+                <img src="./images/logo.png">
+                <ul class="res-social-icons">
+                    <li>Suivez-nous sur</li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                </ul>
+</section>
+</div>
+<section class="footer">
+            <div class="container">
+        <div class="columns">
+            <div class="column1">
+                <h3>Qui sommes nous?</h3>
+                <ul class="footer-links-column1">
+                    <li><a href="#">Qui sommes nous?</a></li>
+                    <li><a href="#">Visitez la Palma Distribution</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Découvrer nos offres et promotions !</a></li>
+    
+                </ul>
+            </div>
+            <div class="column2">
+                <h3>Paiement sécurisé</h3>
+                <ul class="footer-links-column2">
+                    <li><a href="#">Par virement</a></li>
+                    <li><a href="#">Par carte</a></li>
+                    <li><img src="./images/visa.png"></li>
+    
+                </ul>
+            </div>
+            <div class="column3">
+                <h3>Contactez-nous</h3>
+            <ul> <li>7,rue bait lahm <br>
+                    Avenue Mohammed V <br>
+                    10 000,Rabat <br>
+                    +212(0)5-337777 </li>
+                
+            </ul>
+            </div>
+            <div class="column4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13235.106940954638!2d-6.8920047!3d33.9725776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9dcedca707dd5a0f!2s2C%20Solution!5e0!3m2!1sfr!2sma!4v1649333162712!5m2!1sfr!2sma" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@ Copyright Palma distribution 2019</p>
+        </div>
+            </div>
+</section>
+    <script type="text/javascript" src="./js/script.js"></script>  
+</body>
+</html>

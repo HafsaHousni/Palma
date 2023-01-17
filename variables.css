@@ -1,0 +1,11 @@
+:root {
+  --primary-green-color: #9ABC35;
+  --transition-style: .3s linear;
+  --primary-gray-color: #F7F8FC;
+  --gray-paragraph1: #DEDEDE;
+  --gray-paragraph2: #33333A;
+  --gray-paragraph3: #B3B3B3;
+  --dark-gray: #33333A;
+  --normal-font: "Roboto", sans-serif;
+  --primary-blue-color: #1974FE;
+}/*# sourceMappingURL=variables.css.map */

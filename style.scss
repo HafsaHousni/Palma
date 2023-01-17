@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display:ital,wght@0,600;1,400&family=Roboto:wght@700&family=Source+Serif+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");  
+section{
+    font-family: 'Roboto', sans-serif;      
+}
+body{            
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;   
+}
+@import "variables.scss"; 
+@import "header-footer.scss";
+@import "style-home-page.scss"; 
+@import "magazin-container.scss";
+@import "newsletter.scss";
+@import "social-media-section.scss";  
+@import "style-bibliotheque.scss";  
+@import "style-detail-article.scss";
+@import "style-kiosque-detail.scss";
+@import "mon-compte-det.scss";
+@import "style-mon-compte.scss";
+@import "style-kiosque.scss";
+                                          
+
+               
+           
+        

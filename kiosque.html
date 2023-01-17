@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosque</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+</head>
+<body>
+<section class="header">
+            <div class="navbar">
+                <div class="container">
+                <div class="logo-menu-left">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="Palma-Logo">
+                    </div>
+                    <div class="navbar-menu-left">
+                    <ul class="menu-left">
+                        <li class="menu-item" class="active-item">
+                            <a href="index.html" >accueil</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="is-active" >kiosque</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="bibliotheque.html">ma bibliothèque</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="pack_abonnement.html">pack & abonnements</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="navbar-menu-right">
+                    <ul class="menu-right">
+                        <li>
+                            <div class="search" id="search">
+                                <input class="search-txt" type="text" placeholder="Type to search">
+                                <a class="search-btn"><i class="fas fa-search"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                           <p><i class="fa-solid fa-folder-open"></i><span>15,75 MAD</span> <i class="fa-solid fa-circle-plus"></i></p>
+                        </li>
+                        <li>
+                            <a href="mon-compte-det.html"><i class="fa-regular fa-user"></i></a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 5 9 L 5 11 L 45 11 L 45 9 L 5 9 z M 5 24 L 5 26 L 45 26 L 45 24 L 5 24 z M 5 39 L 5 41 L 45 41 L 45 39 L 5 39 z"/></svg>
+                </div>
+            </div>
+            </div>
+</section>
+<section class="kiosque-title">
+        <div class="container"><p><a href="index.html">Accueil</a> / <a href="kiosque.html">Kiosque</a></p></div>
+</section>
+<section class="big-title-section">
+    <div class="container">
+        <div class="title">
+          <h1><span>|</span> kiosque <span>|</span></h1>
+            <p>30 Articles achetés</p>
+        </div>
+        <div class="date-recente">
+            <input placeholder="Date récente"type="number">
+        </div>
+    </div>
+</section>
+<section class="filtred-magazines-section">
+<div class="container">
+    <div class="filtre-area-container">
+            <button class="filter-btn"><i class="fa-solid fa-filter"></i> filtre</button>
+
+        <div class="filter-items">
+            <div class="filter-item-title">
+                <button>
+                    <span>Type</span>
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                </button>
+                <p> <a>Tous</a> <br> <a>Revue </a><br> <a>Journal </a><br> </p>
+            </div>
+    
+            <div class="filter-item-title">
+                <button>
+                    <span>Catégorie</span>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <p> <a>Tous </a><br> <a>Actualité </a><br> <a>Architecture</a> <br> <a>Art </a><br> 
+                    <a>Culture </a><br> <a>Cuisine </a><br> 
+                    <a>Enfants </a><br> <a>Luxe </a><br> <a>Presse </a><br>
+                 <a>Pour lui </a><br> <a>Pour Elle </a></p>
+            </div>
+    
+            <div class="filter-item-title">
+                <button>
+                    <span>periodicité</span>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <p> <a>Tous</a> <br> <a>Revue </a><br> <a>Journal </a><br> </p>
+            </div>
+    
+            <div class="filter-item-title">
+                <button>
+                    <span>origine</span>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <p> <a>Tous</a> <br> <a>Revue </a><br> <a>Journal </a><br> </p>
+            </div>
+            <div class="filter-item-title">
+                <button>
+                    <span>langues</span>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <p> <a>Tous</a> <br> <a>Revue </a><br> <a>Journal </a><br> </p>
+            </div>
+        </div>
+    </div>
+    <div class="filtred-magazine-container">
+                <div class="filtred-magazine-box">
+                    <div class="filtred-magazine-image-container">
+                        <button class="filtred-magazine-title">Sport</button>
+                        <div class="filtred-magazine-img">
+                        <img src="./images/magazine1.jpg" width="150px" height="200px" >
+                        </div>
+                    </div>
+                    <div class="filtred-magazine-infos">
+                        <p class="mag-par">- Magazine -</p>
+                        <h3>VH</h3>
+                        <p><strong>N° 19 AVR 2019</strong></p> 
+                    </div>
+                    <div class="btn-box"><button><a href="kiosque-detail.html">Voir </a></button></div>
+                </div>
+                <div class="filtred-magazine-box">
+                    <div class="filtred-magazine-image-container">
+                        <button class="filtred-magazine-title">Sport</button>
+                        <div class="filtred-magazine-img">
+                        <img src="./images/magazine10.jpg" width="150px" height="200px" >
+                        </div>
+                    </div>
+                    <div class="filtred-magazine-infos">
+                        <p class="mag-par">- Magazine -</p>
+                        <h3>VH</h3>
+                        <p><strong>N° 19 AVR 2019</strong></p> 
+                    </div>
+                    <div class="btn-box"><button><a href="kiosque-detail.html">Voir </a></button></div>
+                </div>
+                <div class="filtred-magazine-box">
+                    <div class="filtred-magazine-image-container">
+                        <button class="filtred-magazine-title">Sport</button>
+                        <div class="filtred-magazine-img">
+                        <img src="./images/magazine2.webp" width="150px" height="200px" >
+                        </div>
+                    </div>
+                    <div class="filtred-magazine-infos">
+                        <p class="mag-par">- Magazine -</p>
+                        <h3>VH</h3>
+                        <p><strong>N° 19 AVR 2019</strong></p> 
+                    </div>
+                    <div class="btn-box"><button><a href="kiosque-detail.html">Voir </a></button></div>
+                </div>
+                <div class="filtred-magazine-box">
+                    <div class="filtred-magazine-image-container">
+                        <button class="filtred-magazine-title">Sport</button>
+                        <div class="filtred-magazine-img">
+                        <img src="./images/magazine6.jpg" width="150px" height="200px" >
+                        </div>
+                    </div>
+                    <div class="filtred-magazine-infos">
+                        <p class="mag-par">- Magazine -</p>
+                        <h3>VH</h3>
+                        <p><strong>N° 19 AVR 2019</strong></p> 
+                    </div>
+                    <div class="btn-box"><button><a href="kiosque-detail.html">Voir </a></button></div>
+                </div>
+                <div class="filtred-magazine-box">
+                    <div class="filtred-magazine-image-container">
+                        <button class="filtred-magazine-title">Sport</button>
+                        <div class="filtred-magazine-img">
+                        <img src="./images/magazine5.jpg" width="150px" height="200px" >
+                        </div>
+                    </div>
+                    <div class="filtred-magazine-infos">
+                        <p class="mag-par">- Magazine -</p>
+                        <h3>VH</h3>
+                        <p><strong>N° 19 AVR 2019</strong></p> 
+                    </div>
+                    <div class="btn-box"><button><a href="kiosque-detail.html">Voir </a></button></div>
+                </div>
+                <div class="filtred-magazine-box">
+                    <div class="filtred-magazine-image-container">
+                        <button class="filtred-magazine-title">Sport</button>
+                        <div class="filtred-magazine-img">
+                        <img src="./images/magazine4.webp" width="150px" height="200px" >
+                        </div>
+                    </div>
+                    <div class="filtred-magazine-infos">
+                        <p class="mag-par">- Magazine -</p>
+                        <h3>VH</h3>
+                        <p><strong>N° 19 AVR 2019</strong></p> 
+                    </div>
+                    <div class="btn-box"><button><a href="kiosque-detail.html">Voir </a></button></div>
+                </div>
+                <div class="filtred-magazine-box">
+                    <div class="filtred-magazine-image-container">
+                        <button class="filtred-magazine-title">Sport</button>
+                        <div class="filtred-magazine-img">
+                        <img src="./images/magazine3.jpg" width="150px" height="200px" >
+                        </div>
+                    </div>
+                    <div class="filtred-magazine-infos">
+                        <p class="mag-par">- Magazine -</p>
+                        <h3>VH</h3>
+                        <p><strong>N° 19 AVR 2019</strong></p> 
+                    </div>
+                    <div class="btn-box"><button><a href="kiosque-detail.html">Voir </a></button></div>
+                </div>
+                <div class="filtred-magazine-box">
+                    <div class="filtred-magazine-image-container">
+                        <button class="filtred-magazine-title">Sport</button>
+                        <div class="filtred-magazine-img">
+                        <img src="./images/magazine2.webp" width="150px" height="200px" >
+                        </div>
+                    </div>
+                    <div class="filtred-magazine-infos">
+                        <p class="mag-par">- Magazine -</p>
+                        <h3>VH</h3>
+                        <p><strong>N° 19 AVR 2019</strong></p> 
+                    </div>
+                    <div class="btn-box"><button><a href="kiosque-detail.html">Voir </a></button></div>
+                </div>
+                <div class="filtred-magazine-box">
+                    <div class="filtred-magazine-image-container">
+                        <button class="filtred-magazine-title">Sport</button>
+                        <div class="filtred-magazine-img">
+                        <img src="./images/magazine15.jpg" width="150px" height="200px" >
+                        </div>
+                    </div>
+                    <div class="filtred-magazine-infos">
+                        <p class="mag-par">- Magazine -</p>
+                        <h3>VH</h3>
+                        <p><strong>N° 19 AVR 2019</strong></p> 
+                    </div>
+                    <div class="btn-box"><button><a href="kiosque-detail.html">Voir </a></button></div>
+                </div>
+            
+    </div>
+</div>
+</section>
+<section class="afficher-plus-section">
+    <button>Afficher plus</button>
+</section>
+<section class="newsletter">
+    <h1>Recevez nos meilleurs articles et nouveautés</h1>
+    <p class="para-sec7">Abonnez-nous à notre Newsletter pour recevoir des nouvelles et des mises à jour.<br>
+        Nous promettons pour ne pas spammer votre super promesse !
+    </p>
+    <div class="email">
+        <input type="email" placeholder="Votre e-mail ici...">
+        <button class="btn-sec7">S'inscrire</button>
+    </div>
+</section>
+<div class="container">
+<section class="social-media-section">
+                <img src="./images/logo.png">
+                <ul class="res-social-icons">
+                    <li>Suivez-nous sur</li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                </ul>
+</section>
+</div>
+<section class="footer">
+    <div class="container">
+<div class="columns">
+    <div class="column1">
+        <h3>Qui sommes nous?</h3>
+        <ul class="footer-links-column1">
+            <li><a href="#">Qui sommes nous?</a></li>
+            <li><a href="#">Visitez la Palma Distribution</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Découvrer nos offres et promotions !</a></li>
+        </ul>
+    </div>
+    <div class="column2">
+        <h3>Paiement sécurisé</h3>
+        <ul class="footer-links-column2">
+            <li><a href="#">Par virement</a></li>
+            <li><a href="#">Par carte</a></li>
+            <li><img src="./images/visa.png"></li>
+        </ul>
+    </div>
+    <div class="column3">
+        <h3>Contactez-nous</h3>
+    <ul> <li>7,rue bait lahm <br>
+            Avenue Mohammed V <br>
+            10 000,Rabat <br>
+            +212(0)5-337777 </li>
+    </ul>
+    </div>
+    <div class="column4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13235.106940954638!2d-6.8920047!3d33.9725776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9dcedca707dd5a0f!2s2C%20Solution!5e0!3m2!1sfr!2sma!4v1649333162712!5m2!1sfr!2sma" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<div class="copyright">
+    <p>@ Copyright Palma distribution 2019</p>
+</div>
+    </div>
+</section>
+    <script type="text/javascript" src="./js/script.js"></script>  
+</body>
+</html>

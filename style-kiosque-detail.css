@@ -1,0 +1,228 @@
+.kiosque-title {
+  margin-top: 50px;
+  background: #F7F8FC;
+  padding: 14px 0px;
+}
+.kiosque-title a {
+  text-decoration: none;
+  color: #80818A;
+}
+.kiosque-title a:hover {
+  color: var(--primary-green-color);
+  transition: var(--transition-style);
+}
+.kiosque-title .top {
+  margin-bottom: 50px;
+}
+.kiosque-title .bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.kiosque-title .bottom .title h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.kiosque-title .bottom .title h1 span {
+  color: var(--primary-green-color);
+}
+.kiosque-title .bottom .subtitle {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.kiosque-title .bottom .subtitle .mag {
+  font-size: 10px;
+  color: #80818A;
+  font-weight: 600;
+}
+.kiosque-title .bottom .subtitle .title-magazine {
+  padding: 0 10px;
+  background: #9ABC35;
+  color: white;
+  border: none;
+}
+.kiosque-title .bottom .subtitle .title-magazine:hover {
+  background-color: white;
+  outline: 2px solid #9ABC35;
+  color: #9ABC35;
+  transition: var(--transition-style);
+}
+.kiosque-title .bottom .subtitle .magazine-name {
+  color: #80818A;
+  font-size: 14px;
+  font-weight: 600;
+}
+.kiosque-title .bottom .subtitle .magazine-name span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+h1.title-left {
+  text-align: left;
+}
+
+.magazine-details-section .container {
+  padding-top: 50px;
+  display: flex;
+  gap: 50px;
+}
+.magazine-details-section .container .image-magazine img {
+  width: 400px;
+  height: 450px;
+}
+.magazine-details-section .container .magazine-details .big-title h1 {
+  font-size: 5rem;
+  font-family: "Playfair Display", serif;
+}
+.magazine-details-section .container .magazine-details .paragraph h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #80818A;
+}
+.magazine-details-section .container .magazine-details .paragraph p {
+  font-size: 14px;
+  color: #80818A;
+  line-height: 1rem;
+  margin-bottom: 50px;
+}
+.magazine-details-section .container .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.magazine-details-section .container .btns .sub-btns {
+  display: flex;
+  gap: 33px;
+}
+.magazine-details-section .container .btns .sub-btns .acheter-article button {
+  border: 1px solid var(--primary-green-color);
+  color: white;
+  background: var(--primary-green-color);
+  padding: 10px 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 213px;
+}
+.magazine-details-section .container .btns .sub-btns .acheter-article button:hover {
+  background-color: white;
+  color: var(--primary-green-color);
+  border: 1px solid var(--primary-green-color);
+  transition: var(--transition-style);
+}
+.magazine-details-section .container .btns .sub-btns .s-abonner button {
+  background-color: white;
+  color: var(--primary-green-color);
+  border: 1px solid var(--primary-green-color);
+  transition: var(--transition-style);
+  padding: 10px 30px;
+  border-radius: 100px;
+}
+.magazine-details-section .container .btns .sub-btns .s-abonner button:hover {
+  color: white;
+  background: var(--primary-green-color);
+}
+.magazine-details-section .container .btns .btn-acheter button {
+  border: none;
+  padding: 10px 60px;
+  color: white;
+  background: black;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.magazine-details-section .container .btns .btn-acheter button:hover {
+  background-color: var(--primary-green-color);
+  transition: var(--transition-style);
+}
+
+.voir-tt-section {
+  text-align: center;
+  padding: 40px;
+}
+.voir-tt-section button {
+  padding: 20px 78px;
+  border-radius: 100px;
+  font-size: 21px;
+  background: transparent;
+  color: #80818A;
+  border: 1px solid #80818A;
+  transition: 0.3s;
+}
+.voir-tt-section button:hover {
+  color: white;
+  border: 1px solid var(--primary-green-color);
+  background-color: var(--primary-green-color);
+}
+
+@media (max-width: 1025px) {
+  .magazine-details-section {
+    gap: 10px;
+  }
+  .magazine-details-section .magazine-details .big-title h1 {
+    font-size: 3rem;
+  }
+  .magazine-details-section .magazine-details .paragraph p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .magazine-details-section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 769px) {
+  .voir-tt-section button {
+    padding: 5px 38px;
+  }
+  .magazine-details-section .container .image-magazine img {
+    width: 100%;
+  }
+  .kiosque-title .top {
+    margin-bottom: 0;
+  }
+  .magazine-details-section .container .magazine-details .big-title h1 {
+    font-size: 3rem;
+  }
+  .kiosque-title .bottom {
+    flex-direction: column;
+  }
+  .magazine-details-section {
+    padding: 10px;
+  }
+  .magazine-details-section .container .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+  }
+  .magazine-details-section .container .btns .sub-btns {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 426px) {
+  .kiosque-title .top {
+    font-size: 10px;
+  }
+  .kiosque-title .bottom .title h1 {
+    font-size: 1rem;
+  }
+  .magazine-details-section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .magazine-box .magazine-image-container {
+    padding-top: 38%;
+  }
+}
+@media (max-width: 321px) {
+  .kiosque-title .bottom .title h1 {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style-kiosque-detail.css.map */

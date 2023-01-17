@@ -1,0 +1,430 @@
+.image-with-title-section .image-section {
+  position: relative;
+  margin-top: 50px;
+}
+.image-with-title-section .title {
+  position: absolute;
+  top: 300px;
+  color: white;
+}
+.image-with-title-section .title p {
+  border-left: 1px solid #9ABC35;
+  border-right: 1px solid #9ABC35;
+  border-width: 5px;
+  width: 150px;
+  padding: 10px 30px;
+}
+.image-with-title-section .title h1 {
+  font-size: 5rem;
+  margin-top: 0;
+  font-weight: 600;
+}
+.image-with-title-section .search-area {
+  position: absolute;
+  top: 600px;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.image-with-title-section .search-area h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: white;
+}
+.image-with-title-section .search-area .search-input {
+  border-radius: 100px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  left: 25%;
+}
+.image-with-title-section .search-area input[type=text] {
+  width: 80%;
+  border: none;
+  padding: 20px;
+  border-radius: 100px;
+  outline: none;
+}
+.image-with-title-section .search-area .search-glass {
+  border: 2px solid;
+}
+.image-with-title-section .search-area i.fa-solid.fa-magnifying-glass {
+  /* padding: 25px; */
+  padding: 25px 40px;
+  border: 1px solid #9ABC35;
+  border-bottom-right-radius: 36px;
+  border-top-right-radius: 37px;
+  font-size: 20px;
+  background-color: #9ABC35;
+  color: white;
+  cursor: pointer;
+  transition: var(--transition-style);
+}
+.image-with-title-section .search-area i.fa-solid.fa-magnifying-glass:hover {
+  background-color: transparent;
+  color: #9ABC35;
+  border: 1px solid white;
+}
+
+.magazines-section {
+  padding-top: 50px;
+}
+.magazines-section h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.magazines-section h1 span {
+  color: var(--primary-green-color);
+  padding: 10px;
+}
+.magazines-section .magazine-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #B3B3B3;
+}
+.magazines-section .magazine-header ul {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  padding: 0;
+  margin: 0;
+}
+.magazines-section .magazine-header ul button {
+  text-decoration: none;
+  color: #B3B3B3;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  width: 100px;
+  transition: 0.2s;
+  background: transparent;
+}
+.magazines-section .magazine-header ul button:hover {
+  color: #9ABC35;
+  border-bottom: 3px solid #9ABC35;
+}
+.magazines-section .magazine-header .genre select.genre-select {
+  border: none;
+  cursor: pointer;
+}
+.magazines-section .magazine-header .genre select.genre-select:hover {
+  color: #9ABC35;
+}
+
+.magazine-header .links .tablinks.active {
+  color: #9ABC35;
+  border-bottom: 3px solid #9ABC35;
+}
+
+.Voir-plus-des-produits-section {
+  margin-top: 40px;
+  padding: 50px;
+  text-align: center;
+  background: #9ABC35;
+}
+.Voir-plus-des-produits-section button {
+  font-size: 20px;
+  padding: 10px 39px;
+  border-radius: 100px;
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  font-weight: 600;
+  transition: var(--transition-style);
+}
+.Voir-plus-des-produits-section button:hover {
+  color: #9ABC35;
+  background: white;
+  outline: none;
+  font-weight: 600;
+}
+
+.partenaires-section {
+  padding: 50px;
+}
+.partenaires-section h1 {
+  text-align: center;
+  font-weight: 600;
+}
+.partenaires-section ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.slick-track {
+  display: flex;
+  width: 4000px;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.galerie {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+.contenant {
+  position: relative;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.contenant img {
+  width: 400px;
+  opacity: 0.5;
+}
+
+.contenant:hover .texte_centrerr {
+  opacity: 1;
+  background-color: black;
+  color: white;
+}
+
+.contenant img:hover {
+  opacity: 1;
+}
+
+.texte_centrerr {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  background: #FFFFFF;
+  opacity: 0.7;
+  border-radius: 16px;
+  padding: 0px 30px;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+.texte_centrerr h2 {
+  font-size: 20px;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: black;
+}
+
+@media (max-width: 1200px) {
+  .image-with-title-section .search-area {
+    top: 424px;
+  }
+  .image-with-title-section .title {
+    top: 180px;
+  }
+}
+@media (max-width: 991px) {
+  .image-with-title-section .search-area {
+    top: 300px;
+  }
+  .image-with-title-section .title {
+    top: 125px;
+  }
+  .image-with-title-section .title h1 {
+    font-size: 3rem;
+  }
+  .magazines-section .magazine-header ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .partenaires-section ul {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 769px) {
+  .image-with-title-section .title h1 {
+    font-size: 2rem;
+  }
+  .image-with-title-section .title p {
+    font-size: 14px;
+  }
+  .image-with-title-section .search-area h3 {
+    font-size: 20px;
+  }
+  .magazines-section .magazine-header ul {
+    gap: 20px;
+  }
+  .magazines-section .magazine-header {
+    justify-content: space-between;
+  }
+  .magazines-section .magazine-header ul {
+    flex-direction: column;
+  }
+  .image-with-title-section .search-area i.fa-solid.fa-magnifying-glass {
+    padding: 18px 40px;
+  }
+  .image-with-title-section .title h1 {
+    font-size: 34px;
+  }
+  .image-with-title-section .search-area h3 {
+    font-size: 25px;
+  }
+  .image-with-title-section .search-area {
+    top: 274px;
+  }
+  .image-with-title-section .search-area input[type=text] {
+    padding: 0;
+    font-size: 10px;
+  }
+}
+@media (max-width: 681px) {
+  .image-with-title-section .search-area h3 {
+    font-size: 20px;
+  }
+  .image-with-title-section .title h1 {
+    font-size: 23px;
+  }
+  .image-with-title-section .search-area i.fa-solid.fa-magnifying-glass {
+    padding: 5px;
+  }
+}
+@media (max-width: 550px) {
+  .image-with-title-section .search-area {
+    margin-top: 0;
+    top: 250px;
+  }
+}
+@media (max-width: 455px) {
+  .image-with-title-section .search-area {
+    top: 240px;
+  }
+  .magazines-section h1 {
+    width: 219px;
+  }
+}
+@media (max-width: 426px) {
+  .magazines-section h1 {
+    font-size: 1rem;
+  }
+  .image-with-title-section .title h1 {
+    font-size: 20px;
+  }
+  .image-with-title-section .title p {
+    font-size: 10px;
+    padding: 5px 7px;
+    width: 70px;
+  }
+  .image-with-title-section .search-area h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .image-with-title-section .search-area .search-input i.fa-solid.fa-magnifying-glass {
+    padding: 10px;
+  }
+  .image-with-title-section .search-area .search-input input[type=text] {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .hamburger.active::before {
+    top: 35px;
+  }
+  .magazine-container .magazine-box:hover .magazine-img img {
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+  }
+  .magazines-section .magazine-header {
+    justify-content: center;
+  }
+  .image-with-title-section .search-area {
+    top: 207px;
+  }
+  .magazines-section .magazine-box {
+    width: 200px;
+  }
+  .magazine-box .magazine-image-container .magazine-img img {
+    height: 100px;
+  }
+  .magazines-section h1 {
+    width: 150px;
+  }
+}
+@media (max-width: 385px) {
+  .image-with-title-section .search-area {
+    top: 207px;
+  }
+  .magazines-section .magazine-box {
+    width: 200px;
+  }
+  .magazine-box .magazine-image-container .magazine-img img {
+    height: 100px;
+  }
+  .magazines-section h1 {
+    width: 150px;
+  }
+}
+@media (max-width: 354px) {
+  .hamburger {
+    right: 34px;
+  }
+}
+@media (max-width: 321px) {
+  .magazines-section .magazine-box .magazine-image-container {
+    width: 185px;
+  }
+  .image-with-title-section .title p {
+    margin: 5px;
+  }
+  .magazines-section h1 {
+    width: 121px;
+  }
+  .magazines-section .magazine-header {
+    justify-content: center;
+  }
+  .image-with-title-section .title {
+    top: 100px;
+  }
+  .image-with-title-section .search-area {
+    top: 192px;
+  }
+}/*# sourceMappingURL=style-home-page.css.map */

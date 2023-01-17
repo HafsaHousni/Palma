@@ -1,0 +1,156 @@
+
+.inscription-connexion-section{
+    padding: 50px;
+    padding-bottom: 120px;
+    // padding-left: 135px
+    .title{
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            span{
+                color: var(--primary-green-color);
+                padding: 20px;
+            }
+        }
+    }
+    .inscription-connexion{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        .inscription{
+            border: 1px solid #9BA2A7;
+            padding: 20px;
+            p{
+                color:  #9BA2A7;
+                font-weight: 500;
+            }
+            button{
+                margin-top: 20px;
+                &:hover{
+                    background-color: var(--primary-green-color);
+        
+                }
+            }
+        }
+        .connexion{
+            border: 1px solid #9BA2A7;
+            padding: 20px;
+            p{
+                color:  #9BA2A7;
+                font-weight: 500;
+
+            }
+            button{
+                &:hover{
+                    background-color: var(--primary-green-color);
+        
+                }
+            }
+            .label{
+                display: flex;
+                justify-content: space-between;
+            }
+            .fields{
+                display: flex;
+                flex-direction: column;
+                p{
+                    font-size: 15px;
+                    margin-bottom: 0;
+                }
+
+            
+            input{
+                border-radius: 5px;
+                border: none;
+                background: #F7F8FC;
+                padding: 10px;
+                outline: none;
+                transition: .2s;
+            }
+            input:focus{ 
+                border: 2px solid #1974FE;
+            }
+            .label-title.password{
+                margin-top: 20px;
+            }
+            input[type="password"]{
+                margin-bottom: 20px;
+            }
+            .connecter{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    &:hover{
+                        color: #9ABC35;
+                    }
+                }
+            }
+        } 
+        }
+    }
+    .green-title{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: var(--primary-green-color);
+        font-weight: 600;
+    }
+    .black-btn {
+        border: none;
+        background: black;
+        color: white;
+        padding: 10px 40px;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: var(--transition-style);
+       
+    }
+    .label-title{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+@media (max-width: 769px){
+    .inscription-connexion-section .inscription-connexion .connexion .fields .connecter{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .inscription-connexion-section .inscription-connexion{
+        flex-direction: column;
+    }
+    .inscription-connexion-section .title h1 {
+        font-size: 33px;
+    }
+    .inscription-connexion-section .title h1 span,
+    .inscription-connexion-section{
+        padding: 0;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 426px){
+    .inscription-connexion-section .inscription-connexion{
+        flex-direction: column;
+    }
+   
+    .inscription-connexion-section .title h1{
+        font-size: 20px;
+    }
+}
+@media(max-width: 321px){
+    .section-2{
+        margin-top: 14%;
+    }
+    .inscription-connexion-section .title h1{
+        font-size: 1rem;
+    }
+    .inscription-connexion-section .inscription-connexion .inscription p{
+        font-size: 13px;
+    }
+}
+
+

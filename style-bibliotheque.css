@@ -1,0 +1,289 @@
+.link-section {
+  background: #F7F8FC;
+  margin-top: 50px;
+}
+.link-section p {
+  background: #F7F8FC;
+  color: #80818A;
+}
+.link-section p a {
+  text-decoration: none;
+  color: #80818A;
+}
+.link-section p a:hover {
+  color: #9ABC35;
+}
+
+.big-title-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.big-title-section .container .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.big-title-section .container .title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.big-title-section .container .title h1 span {
+  color: #9ABC35;
+}
+.big-title-section .container .title p {
+  color: #80818A;
+}
+.big-title-section .container .date-recente input[type=number] {
+  border: none;
+  color: #80818A;
+  outline: none;
+  text-align: end;
+}
+
+.magazines-biblio-section {
+  padding-top: 50px;
+}
+.magazines-biblio-section h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.magazines-biblio-section h1 span {
+  color: #9ABC35;
+  padding: 10px;
+}
+.magazines-biblio-section .biblio-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #B3B3B3;
+  padding: 0;
+  align-items: center;
+}
+.magazines-biblio-section .biblio-header ul {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  padding-left: 0;
+  font-size: 17px;
+  margin: 0;
+}
+.magazines-biblio-section .biblio-header ul button {
+  text-decoration: none;
+  color: #B3B3B3;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  width: 100px;
+  padding: 20px;
+  margin-bottom: 0;
+  transition: 0.2s;
+  background: transparent;
+}
+.magazines-biblio-section .biblio-header ul button:hover {
+  color: #9ABC35;
+  border-bottom: 3px solid #9ABC35;
+}
+.magazines-biblio-section .biblio-header .categorie select.categorie-select {
+  border: none;
+  cursor: pointer;
+  color: #80818A;
+}
+.magazines-biblio-section .biblio-header .categorie select.categorie-select:hover {
+  color: #9ABC35;
+}
+.magazines-biblio-section .biblio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.magazines-biblio-section .biblio-container .biblio-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  align-items: center;
+}
+.magazines-biblio-section .biblio-container .biblio-infos .prix {
+  border: 1px solid #80818A;
+  color: #1974FE;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.magazines-biblio-section .biblio-container .biblio-infos .prix i.fa-solid.fa-check {
+  color: #9ABC35;
+}
+.magazines-biblio-section .biblio-container .biblio-infos .restant p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.biblio-container .magazine-box:hover .magazine-infos p {
+  color: white;
+}
+
+.biblio-container .magazine-box:hover .magazine-img img {
+  transition: 0.3s;
+  transform: scale(1.2, 1.2);
+}
+
+.biblio-container .magazine-box:hover .magazine-title {
+  background-color: white;
+  color: #9ABC35;
+  transition: 0.3s;
+}
+
+.biblio-header .links .tablinks.active {
+  color: #9ABC35;
+  border-bottom: 3px solid #9ABC35;
+}
+
+.afficher-plus-section {
+  text-align: center;
+  padding: 40px;
+}
+.afficher-plus-section button {
+  padding: 20px 78px;
+  border-radius: 100px;
+  font-size: 21px;
+  background: transparent;
+  color: #80818A;
+  border: 1px solid #80818A;
+  transition: 0.3s;
+}
+.afficher-plus-section button:hover {
+  color: white;
+  background: #9ABC35;
+  border: 1px solid #9ABC35;
+}
+
+@media (max-width: 1025px) {
+  .big-title-section .title h1 {
+    font-size: 2rem;
+  }
+  .magazines-biblio-section .biblio-container .biblio-infos {
+    flex-direction: column;
+  }
+  .big-title-section .title p {
+    margin-top: 10px;
+  }
+  .magazines-biblio-section .biblio-header ul {
+    flex-direction: row;
+    gap: 0px;
+  }
+  .magazine1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .magazine-box {
+    width: 40%;
+  }
+  .link-section p {
+    display: block;
+    padding: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .big-title-section .container .title h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 769px) {
+  .big-title-section {
+    gap: 5%;
+  }
+  .magazines-biblio-section .biblio-container .biblio-infos {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .big-title-section .container {
+    flex-direction: column;
+  }
+  .magazines-biblio-section .biblio-container .biblio-infos {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .magazine-box {
+    width: 60%;
+  }
+  .big-title-section .container .date-recente input[type=number] {
+    text-align: center;
+  }
+}
+@media (max-width: 525px) {
+  .magazine-box {
+    width: 100%;
+  }
+  .magazines-biblio-section {
+    padding: 20px;
+  }
+  .afficher-plus-section {
+    text-align: center;
+    padding: 10px;
+  }
+  .magazine-box .magazine-image-container {
+    padding-top: 20%;
+  }
+}
+@media (max-width: 426px) {
+  .magazine-box {
+    width: 100%;
+  }
+  .magazines-biblio-section .biblio-header ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  .magazine-box .magazine-image-container .magazine-img img {
+    height: 115px;
+    width: 100px;
+  }
+  .magazines-biblio-section .biblio-container .biblio-infos {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .big-title-section {
+    flex-direction: column;
+  }
+  .big-title-section .title {
+    flex-direction: column;
+    gap: 0;
+  }
+  .big-title-section .date-recente input[type=number] {
+    text-align: center;
+  }
+  .section button {
+    padding: 15px;
+  }
+  .section-6 .email {
+    flex-direction: column;
+  }
+  .section-6 .email input {
+    width: 100%;
+  }
+}
+@media (max-width: 376px) {
+  .magazines-biblio-section .biblio-header {
+    justify-content: space-around;
+  }
+  .magazine-box .magazine-infos p {
+    font-size: 10px;
+  }
+  .magazine-box .magazine-image-container .magazine-img img {
+    width: 80px;
+    height: 90px;
+    margin-top: 15px;
+  }
+  .magazines-biblio-section .biblio-container .biblio-infos .prix {
+    padding: 5px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style-bibliotheque.css.map */

@@ -1,0 +1,297 @@
+
+.profile-activité-section .container{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    .green-title{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: var(--color-span);
+        font-weight: 600;
+    }
+    .mon-profil{
+        width: 50%;
+        h3{
+            border: 1px solid #80818A;
+            border-bottom: none;
+            padding: 10px;
+            text-transform: capitalize;
+            margin: 0;
+        }
+        .profil-box{
+            padding: 20px;
+            border: 1px solid #80818A;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            .left{
+                .profil-pic{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: center;
+                    .profil-name{
+                        font-weight: 600;
+                        font-size: 17px;
+                    }
+                    .modifier a{
+                        font-weight: 600;
+                        &:hover{
+                            color: #9ABC35;
+                        }
+                    }
+                }
+                img{
+                    border-radius: 100px;
+                    object-fit: cover;
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                label{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 13px;
+                    color: #80818A;
+                    margin-top: 10px;
+                }
+                input{
+                    border: none;
+                    width: 203px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border-bottom: 1px solid #80818A;
+                }
+            }
+        }
+    }
+    .activite{
+        width: 50%;
+        h3{
+            border: 1px solid #80818A;
+            border-bottom: none;
+            padding: 10px;
+            text-transform: capitalize;
+            margin: 0;
+        }
+        .activite-box{
+            border: 1px solid #80818A;
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 33;
+            justify-content: center;
+            padding: 40px;
+            .total-achat{
+                width: 50%;
+                border: 1px solid #80818A;
+                text-align: center;
+                border-top: none;
+                border-left: none;
+                i.fa-solid.fa-chart-simple{
+                    color: var(--blue);
+                    font-size: 2rem;
+                }
+                h5{
+                    color: var(--blue);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+            .total-abonnement{
+                width: 50%;
+                border: 1px solid  #80818A;
+                text-align: center;
+                border-top: none;
+                border-right: none;
+                i.fa-solid.fa-chart-simple{
+                    color: var(--blue);
+                    font-size: 2rem;
+                }
+                h5{
+                    color: var(--red);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+            .achat-auj{
+                width: 50%;
+                border: 1px solid  #80818A;
+                text-align: center;
+                border-left: none;
+                border-bottom: none;
+                h5{
+                    color: var(--blue);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+            .abon-auj{
+                width: 50%;
+                border: 1px solid  #80818A;
+                text-align: center;
+                border-right: none;
+                border-bottom: none;
+                h5{
+                    color: var(--red);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+.statistiques-section{
+    padding-top: 50px;
+    .table-header{
+        border-bottom: 1px solid #80818A;
+        display: flex;
+         gap: 40px;
+        button{
+            border: none;
+            background: transparent;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 17px;
+            outline: none;
+            transition: var(--transition-style);
+            cursor: pointer ;
+            &:hover{
+                color:#9ABC35 ;
+                border-bottom: 3px solid #9ABC35;
+            }
+        }
+    }
+    table{
+        width: 100%;
+        margin-top: 35px;
+        th{
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 13px;
+            font-family: 'Roboto', sans-serif;
+        }
+        td 
+        {
+            padding: 13px;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: #80818A;
+            font-size: 15px;
+            span{
+            text-transform: capitalize;
+            font-weight: 600;
+            color: black;
+            font-size: 15px;
+        }
+    }
+}
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        
+        margin-top: 95px;
+        span{
+            font-weight: 600;
+        }
+    }
+}
+button.tablinks.active{
+    color:#9ABC35;
+    border-bottom: 3px solid #9ABC35;
+}
+@media (max-width: 1025px){
+    .profile-activité-section .activite .activite-box{
+        padding: 32px;
+    }
+}
+@media (max-width: 992px){
+    .profile-activité-section .container .mon-profil,
+    .profile-activité-section .container .activite{
+        width: 100%;
+}
+.profile-activité-section .container{
+    flex-direction: column;
+    align-items: center;
+}
+}
+@media (max-width: 769px) {
+    .profile-activité-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .statistiques-section{
+        padding: 1px;
+    }
+}
+@media (max-width: 426px){
+    .profile-activité-section .mon-profil .profil-box{
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-activité-section .mon-profil .profil-box .left .profil-pic .profil-name {
+        text-align: center;
+    }
+    .profile-activité-section .mon-profil .profil-box .right input{
+        text-align: center;
+         font-size: 11px;
+    }
+    .profile-activité-section .mon-profil{
+        width: 100%;
+    }
+    .profile-activité-section .activite{
+        width: 100%;
+    }
+    .statistiques-section .table-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .statistiques-section .bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-activité-section .activite .activite-box .total-abonnement h5,
+    .profile-activité-section .activite .activite-box .total-achat h5,
+    .profile-activité-section .activite .activite-box .achat-auj h5,
+    .profile-activité-section .activite .activite-box .abon-auj h5
+    {
+        font-size: 10px;
+    }
+    .profile-activité-section {
+        padding: 20px;
+    }
+}
+@media (max-width: 376px){
+    .profile-activité-section .container .activite .activite-box{
+        padding: 7px;
+    }
+}
+

@@ -1,0 +1,208 @@
+.filtred-magazines-section .filtred-magazine-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 70%;
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box {
+  width: 30%;
+  position: relative;
+  transition: var(--transition-style);
+  cursor: pointer;
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box .filtred-magazine-image-container {
+  position: relative;
+  padding: 20%;
+  padding-top: 40%;
+  background-color: #F7F8FC;
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box .filtred-magazine-image-container .filtred-magazine-title {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  border: none;
+  padding: 0 30px;
+  background: #9ABC35;
+  color: white;
+  font-weight: 600;
+  transition: var(--transition-style);
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box .filtred-magazine-image-container .filtred-magazine-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box .filtred-magazine-image-container .filtred-magazine-img img {
+  box-shadow: -12px 15px 60px -40px black;
+  transition: var(--transition-style);
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box .filtred-magazine-infos {
+  text-align: center;
+  line-height: 3px;
+  padding: 10px;
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box .filtred-magazine-infos .mag-par {
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box .filtred-magazine-infos .date {
+  font-weight: 600;
+  color: #979797;
+  font-size: 14px;
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box .filtred-magazine-infos h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+}
+.filtred-magazines-section .filtred-magazine-container .filtred-magazine-box .filtred-magazine-infos p {
+  color: #B3B3B3;
+  font-size: 14px;
+}
+.filtred-magazines-section .filtred-magazine-container .btn-box {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: var(--transition-style);
+}
+.filtred-magazines-section .filtred-magazine-container .btn-box button {
+  background: black;
+  color: white;
+  padding: 10px 55px;
+  border-radius: 100px;
+  font-weight: 600;
+  transition: var(--transition-style);
+}
+.filtred-magazines-section .filtred-magazine-container .btn-box button a {
+  color: white;
+  text-decoration: none;
+}
+
+.filtred-magazine-image-container :hover {
+  opacity: 0.8;
+}
+
+.filtred-magazine-container .filtred-magazine-box:hover .filtred-magazine-img img {
+  transform: scale(1.2, 1.2);
+}
+
+.filtred-magazine-box:hover .btn-box {
+  opacity: 1;
+}
+
+.filtre-area-container {
+  width: 20%;
+}
+
+.filter-item-title button {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: var(--primary-green-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: 1px solid;
+}
+
+.filter-item-title p {
+  font-size: 15px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  line-height: 2rem;
+}
+.filter-item-title p a {
+  cursor: pointer;
+  color: var(--dark-gray);
+  transition: var(--transition-style);
+}
+.filter-item-title p a:hover {
+  font-weight: 600;
+  color: black;
+}
+
+.d-arrow {
+  transition: transform 0.5s ease-in;
+}
+
+/*add this class when click*/
+.filter-item-title p.show {
+  max-height: 200px;
+  opacity: 1;
+  padding: 10px 15px 30px 15px;
+}
+
+.filter-item-title button .d-arrow.rotate {
+  transform: rotate(180deg);
+  color: gainsboro;
+}
+
+.filtred-magazines-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-items {
+  opacity: 0;
+  height: 0;
+  transition: var(--transition-style);
+}
+
+.filter-items.show {
+  opacity: 1;
+  transition: var(--transition-style);
+  height: auto;
+}
+
+button.filter-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px 0;
+}
+button.filter-btn .fa-solid.fa-filter {
+  color: var(--primary-green-color);
+}
+
+@media (max-width: 1025px) {
+  .filtred-magazines-section .filtred-magazine-container .filtred-magazine-box {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .filtred-magazines-section .filtred-magazine-container .filtred-magazine-box {
+    width: 100%;
+  }
+  .filtre-area-container {
+    width: 40%;
+  }
+  .filtred-magazines-section .filtred-magazine-container {
+    width: 50%;
+  }
+  .filter-item-title button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .filtred-magazines-section .filtred-magazine-container {
+    width: 90%;
+  }
+  .filtred-magazines-section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style-kiosque.css.map */
